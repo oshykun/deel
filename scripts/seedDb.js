@@ -1,4 +1,8 @@
-const { Profile, Contract, Job } = require('../src/model');
+require('../src/initializers/10.sequelize');
+require('../src/initializers/20.models');
+
+const DIRegistry = require('../src/lib/diRegistry');
+const { Profile, Contract, Job } = DIRegistry.models;
 
 /* WARNING THIS WILL DROP THE CURRENT DATABASE */
 seed();

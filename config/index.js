@@ -1,6 +1,6 @@
 module.exports = {
   dbConfig: {
     dialect: 'sqlite',
-    storage: './database.sqlite3',
+    storage: `${__dirname}/../database.sqlite3`,
   },
 };
